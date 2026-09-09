@@ -1,5 +1,4 @@
-// Claim form — no data is stored or sent anywhere. Submitting just moves
-// to the payoff page for the recording.
+// Claim form with textboxes for user inputs
 const claimForm = document.getElementById('claimForm');
 if (claimForm) {
   claimForm.addEventListener('submit', (e) => {
@@ -8,8 +7,7 @@ if (claimForm) {
   });
 }
 
-// DVD-logo-style bounce: the "Read Ad" text drifts around inside its
-// banner and reverses direction whenever it hits an edge.
+// DVD bounce
 document.querySelectorAll('.ad-track').forEach((track) => {
   const ball = track.querySelector('.dvd-bounce');
   if (!ball) return;
